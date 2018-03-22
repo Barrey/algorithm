@@ -28,11 +28,9 @@ $f = generateNumber(1,5000);
 $g = range(1,5000);
 
 sort($f);
-// echo '<pre>';print_r($f);'</pre>';
-// echo '<pre>';print_r($g);'</pre>';
 
 $diff = array_diff($g, $f);
-echo '<pre>';print_r($diff);'</pre>';
-echo '<p>'.array_sum($diff).'</p>';
-// var_dump($g);
+
+echo '<p>Total sum of all self-numbers between (1-5000) = '.array_sum($diff).'</p>';
+
 ?>
